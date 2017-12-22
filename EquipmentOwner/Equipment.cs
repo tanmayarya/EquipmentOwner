@@ -5,11 +5,10 @@ namespace EquipmentOwner
 {
     public class Equipment
     {
-
-        protected string name;
-        protected string description;
-        protected double distanceMoved;
-        protected double maintenanceCost;
+        public string name { get; private set; }
+        public string description{ get; private set; }
+        public double distanceMoved{ get; protected set; }
+        public double maintenanceCost{ get; protected set; }
 
 
 
@@ -27,26 +26,5 @@ namespace EquipmentOwner
         }
 
        
-        public string GetName() {
-            return this.name;
-        }
-       
-
-        public string GetDescription(){
-            return this.description;
-        }
-
-       
-
-        public double GetDistanceMoved(){
-            return this.distanceMoved;
-        }
-       
-
-        public double GetMaintenanceCost() {
-            return this.maintenanceCost;
-        }
-
-
-    }
+     }
 }

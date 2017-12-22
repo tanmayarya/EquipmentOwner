@@ -35,6 +35,8 @@ namespace EquipmentOwner
 
         }
 
+
+
         public static void DeleteEquipment(string name)
         {
             Console.WriteLine();
@@ -46,39 +48,50 @@ namespace EquipmentOwner
 
         }
 
+
+
         public static void MoveEquipment(string name, double distancemoved)
         {
             Console.WriteLine();
             if (equipments.ContainsKey(name)) 
             {
                 equipments.GetValueOrDefault(name).MovedBy(distancemoved);
+                Console.WriteLine("{0} moved by {1} Km." ,name,distancemoved);
 
             }
             else Console.WriteLine("Equipment not found");
         }
+
+
+
         public static void ListEquipment()
         {
             Console.WriteLine();
             Console.WriteLine("--------------Equipments--------------");
+            Console.WriteLine();
             Console.WriteLine("Name \t \t Description");
+            Console.WriteLine();
             foreach (var item in equipments)
             {
-                Console.WriteLine("{0} \t \t {1}", item.Key, item.Value.GetDescription());
+                Console.WriteLine("{0} \t \t {1}", item.Key, item.Value.description);
             }
-
+            Console.WriteLine();
             Console.WriteLine("--------------------------------------");
         }
+
+
+
 
         public static void EquipmentDetail(string name)
         {
             Console.WriteLine();
             if (equipments.ContainsKey(name))
             {
-                
-                Console.WriteLine("Name: "+ equipments.GetValueOrDefault(name).GetName());
-                Console.WriteLine("Description: " + equipments.GetValueOrDefault(name).GetDescription());
-                Console.WriteLine("Distance Moved: " + equipments.GetValueOrDefault(name).GetDistanceMoved());
-                Console.WriteLine("Maintenance Cost: " + equipments.GetValueOrDefault(name).GetMaintenanceCost());
+
+                Console.WriteLine("Name: " + equipments.GetValueOrDefault(name).name);
+                Console.WriteLine("Description: " + equipments.GetValueOrDefault(name).description);
+                Console.WriteLine("Distance Moved: " + equipments.GetValueOrDefault(name).distanceMoved);
+                Console.WriteLine("Maintenance Cost: " + equipments.GetValueOrDefault(name).maintenanceCost);
 
             }
             else Console.WriteLine("Equipment not found");

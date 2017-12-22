@@ -10,7 +10,7 @@ namespace EquipmentOwner
             this.wieght = wieght;
         }
 
-        public new void MovedBy(double distance)
+        public override void MovedBy(double distance)
         {
             base.MovedBy(distance);
             this.maintenanceCost += (this.wieght * this.distanceMoved);
