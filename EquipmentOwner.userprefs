@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{DF7B7FBC-4F88-4903-BF32-B92C51166983}|Default">
+  <MonoDevelop.Ide.ItemProperties.EquipmentOwner PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="EquipmentOwner/Program.cs">
+    <Files>
+      <File FileName="EquipmentOwner/Program.cs" Line="31" Column="1" />
+      <File FileName="EquipmentOwner/EquipmentHelper.cs" Line="54" Column="52" />
+      <File FileName="EquipmentOwner/Equipment.cs" Line="12" Column="18" />
+      <File FileName="EquipmentOwner/Mobile.cs" Line="15" Column="36" />
+      <File FileName="EquipmentOwner/ImMobile.cs" Line="15" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

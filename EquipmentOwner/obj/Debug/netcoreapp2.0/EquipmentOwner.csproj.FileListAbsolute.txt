@@ -1,0 +1,11 @@
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/obj/Debug/netcoreapp2.0/EquipmentOwner.csprojResolveAssemblyReference.cache
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/obj/Debug/netcoreapp2.0/EquipmentOwner.csproj.CoreCompileInputs.cache
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/obj/Debug/netcoreapp2.0/EquipmentOwner.AssemblyInfoInputs.cache
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/obj/Debug/netcoreapp2.0/EquipmentOwner.AssemblyInfo.cs
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/bin/Debug/netcoreapp2.0/EquipmentOwner.deps.json
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/bin/Debug/netcoreapp2.0/EquipmentOwner.runtimeconfig.json
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/bin/Debug/netcoreapp2.0/EquipmentOwner.runtimeconfig.dev.json
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/bin/Debug/netcoreapp2.0/EquipmentOwner.dll
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/bin/Debug/netcoreapp2.0/EquipmentOwner.pdb
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/obj/Debug/netcoreapp2.0/EquipmentOwner.dll
+/Users/tanmay/Projects/EquipmentOwner/EquipmentOwner/obj/Debug/netcoreapp2.0/EquipmentOwner.pdb
