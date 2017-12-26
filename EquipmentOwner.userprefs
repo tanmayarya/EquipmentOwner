@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{DF7B7FBC-4F88-4903-BF32-B92C51166983}|Default">
   <MonoDevelop.Ide.ItemProperties.EquipmentOwner PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="EquipmentOwner/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="EquipmentOwner/EquipmentOpertion.cs">
     <Files>
-      <File FileName="EquipmentOwner/Program.cs" Line="31" Column="1" />
-      <File FileName="EquipmentOwner/EquipmentHelper.cs" Line="54" Column="52" />
-      <File FileName="EquipmentOwner/Equipment.cs" Line="12" Column="18" />
-      <File FileName="EquipmentOwner/Mobile.cs" Line="15" Column="36" />
-      <File FileName="EquipmentOwner/ImMobile.cs" Line="15" Column="36" />
+      <File FileName="EquipmentOwner/Program.cs" Line="36" Column="63" />
+      <File FileName="EquipmentOwner/InputOutput.cs" Line="28" Column="55" />
+      <File FileName="EquipmentOwner/EquipmentRepository.cs" Line="12" Column="18" />
+      <File FileName="EquipmentOwner/EquipmentHelper.cs" Line="22" Column="37" />
+      <File FileName="EquipmentOwner/EquipmentOpertion.cs" Line="6" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

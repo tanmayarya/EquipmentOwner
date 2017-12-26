@@ -5,22 +5,21 @@ namespace EquipmentOwner
 {
     public class EquipmentHelper
     {
-        private static Dictionary<string, Equipment> equipments = new Dictionary<string, Equipment>();
+        static private Dictionary<string, Equipment> equipments = new Dictionary<string, Equipment>();
 
 
+        static EquipmentRepository element = new EquipmentRepository();
 
         public static void CreateEquipment(string name,string description)
         { 
 
 
-            if(IsMobile()){
-                
-
+            if(IsMobile())
+            {
                 Console.WriteLine("Enter number of wheels");
                 int wheels = Convert.ToInt32(Console.ReadLine());
                 Equipment obj = new Mobile(name, description, wheels);
-                equipments.Add(name, obj);
-
+                element.Create(obj);
             }
             else {
                 
@@ -28,7 +27,7 @@ namespace EquipmentOwner
                 Console.WriteLine("Enter Weight");
                 double weight = Convert.ToDouble(Console.ReadLine());
                 ImMobile obj = new ImMobile(name, description,weight );
-                equipments.Add(name, obj);
+                element.Create(obj);
             }
             Console.WriteLine("Equipment Created");
             Console.WriteLine();
@@ -40,7 +39,7 @@ namespace EquipmentOwner
         public static void DeleteEquipment(string name)
         {
             Console.WriteLine();
-            if (!equipments.Remove(name))
+            if (!element.ContainsEquipment(name))
               Console.WriteLine("Equipment not found");
 
             else

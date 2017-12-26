@@ -3,38 +3,21 @@ using System.Collections.Generic;
 
 namespace EquipmentOwner
 {
-    class Program 
+    class Program
     {
 
 
         static void Main(string[] args)
         {
-            
-            int choice;
-            do { 
-                Console.WriteLine();
-            Console.WriteLine("******************** WELCOME ********************");
 
-            Console.WriteLine();
-            Console.WriteLine();
-
-            Console.WriteLine("1. Create an Equipment");
-            Console.WriteLine("2. Delete an Equipment");
-            Console.WriteLine("3. Move an Equipment");
-            Console.WriteLine("4. List all Equipments");
-            Console.WriteLine("5. Show details of an equipment");
-            Console.WriteLine("6. Exit");
-            Console.WriteLine();
-
-            Console.WriteLine("Enter choice number:");
-           
-            choice = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine();
-             
-            switch(choice)
+            Choice choice;
+            do
             {
-                case 1: 
-                        
+                InputOutput.ShowMenu();
+                choice = InputOutput.Choice();
+                switch (choice)
+                {
+                    case Choice.Create:
                         Console.WriteLine();
                         Console.WriteLine("Enter Name:");
                         string name = Console.ReadLine();
@@ -45,14 +28,14 @@ namespace EquipmentOwner
                         EquipmentHelper.CreateEquipment(name, description);
                         break;
 
-                case 2:
+                    case Choice.Delete:
                         Console.WriteLine();
                         Console.WriteLine("Enter name of the Equipment:");
                         name = Console.ReadLine();
 
                         EquipmentHelper.DeleteEquipment(name);
                         break;
-                case 3:
+                    case Choice.Move:
                         Console.WriteLine();
                         Console.WriteLine("Enter name of the Equipment:");
                         name = Console.ReadLine();
@@ -60,27 +43,30 @@ namespace EquipmentOwner
                         double distancemoved = Convert.ToDouble(Console.ReadLine());
                         EquipmentHelper.MoveEquipment(name, distancemoved);
                         break;
-                case 4:
+
+                    case Choice.ListAll:
                         Console.WriteLine();
                         EquipmentHelper.ListEquipment();
                         break;
-                case 5:
+
+                    case Choice.EquipmentDetails:
                         Console.WriteLine();
                         Console.WriteLine("Enter name of the Equipment:");
                         name = Console.ReadLine();
                         EquipmentHelper.EquipmentDetail(name);
                         break;
-                case 6:
+
+                    case Choice.Exit:
                         Console.WriteLine();
                         Console.WriteLine("Thank you");
                         break;
-                default:
+                    default:
                         Console.WriteLine();
                         Console.WriteLine("Enter valid choice");
                         break;
-            }
+                }
 
-            } while (choice!=6);
+            } while (choice != Choice.Exit);
 
 
         }
