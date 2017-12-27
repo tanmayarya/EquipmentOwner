@@ -32,5 +32,15 @@ namespace EquipmentOwner
         {
             return Equipments.ContainsKey(equipment);
         }
+
+        public Equipment GetEquipment(String name)
+        {
+            return Equipments.GetValueOrDefault(name);
+        }
+
+        public Dictionary<string, Equipment> GetAllEquipments()
+        {
+            return this.Equipments;
+        }
     }
 }

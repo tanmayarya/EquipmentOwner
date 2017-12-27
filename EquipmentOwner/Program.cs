@@ -18,47 +18,24 @@ namespace EquipmentOwner
                 switch (choice)
                 {
                     case Choice.Create:
-                        Console.WriteLine();
-                        Console.WriteLine("Enter Name:");
-                        string name = Console.ReadLine();
-
-                        Console.WriteLine("Enter Description:");
-                        string description = Console.ReadLine();
-
-                        EquipmentHelper.CreateEquipment(name, description);
+                        EquipmentOpertion.Create();
                         break;
-
                     case Choice.Delete:
-                        Console.WriteLine();
-                        Console.WriteLine("Enter name of the Equipment:");
-                        name = Console.ReadLine();
-
-                        EquipmentHelper.DeleteEquipment(name);
+                        EquipmentOpertion.Delete();
                         break;
                     case Choice.Move:
-                        Console.WriteLine();
-                        Console.WriteLine("Enter name of the Equipment:");
-                        name = Console.ReadLine();
-                        Console.WriteLine("Enter distance to be moved:");
-                        double distancemoved = Convert.ToDouble(Console.ReadLine());
-                        EquipmentHelper.MoveEquipment(name, distancemoved);
+                        EquipmentOpertion.Move();
                         break;
-
                     case Choice.ListAll:
-                        Console.WriteLine();
-                        EquipmentHelper.ListEquipment();
+                        EquipmentOpertion.ListAll();
                         break;
 
                     case Choice.EquipmentDetails:
-                        Console.WriteLine();
-                        Console.WriteLine("Enter name of the Equipment:");
-                        name = Console.ReadLine();
-                        EquipmentHelper.EquipmentDetail(name);
+                        EquipmentOpertion.EquipmentDetail();
                         break;
 
                     case Choice.Exit:
-                        Console.WriteLine();
-                        Console.WriteLine("Thank you");
+                        InputOutput.Exit();
                         break;
                     default:
                         Console.WriteLine();
